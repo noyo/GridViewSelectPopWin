@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="false">
+        <shape>
+            <stroke android:color="@android:color/darker_gray" android:width="0.5dp"/>
+            <gradient android:startColor="@android:color/white" android:endColor="@android:color/white"/>
+
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape>
+            <stroke android:color="@android:color/darker_gray" android:width="0.5dp"/>
+            <gradient android:startColor="@color/bg_common_color" android:endColor="@color/bg_common_color"/>
+
+        </shape>
+    </item>
+</selector>
