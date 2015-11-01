@@ -12,9 +12,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by noyet on 2015/10/16.
- */
 public class GridViewSelectPopWinAdapter extends BaseAdapter {
 
     private Context mContext;
@@ -76,7 +73,7 @@ public class GridViewSelectPopWinAdapter extends BaseAdapter {
             view.setTag(R.id.tag_data, holder);
             view.setTag(R.id.tag_id, position);
         }
-        holder.mTextView.setText(mList.get(position) + "");
+        holder.mTextView.setText(getItem(position) + "");
         view.setOnClickListener(listener);
         if (index.get(position)) {
             setSelectIndex(holder, true);

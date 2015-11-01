@@ -28,7 +28,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
             mList.add(1000 + i);
         }
         mPopWin = new GridViewSelectPopWin(this);
-        mAdapter = new GridViewSelectPopWinAdapter(this, Util.getMetrics(this).widthPixels / 6, mList);
+        mAdapter = new GridViewSelectPopWinAdapter(this,
+                Util.getMetrics(this).widthPixels / 6,
+                mList);
     }
 
     @Override
