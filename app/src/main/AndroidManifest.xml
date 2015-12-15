@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.practice.noyet.gridviewselectpopwin" >
+    package="com.practice.noyet.gridviewselectpopwin">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <meta-data
+            android:name="apkplug-auth"
+            android:value="GhJgLHlSdlyPEx7lhFvbQFUILWP7xpVDDWxDvnaHE5ZVije6XiXG0MOyTYRA8kdcShuw2z
+            W79PSzH2SFoIKzxeg5axT1grAlwwa7J6tr0M8VoQRksd+b9CCL35z4LcpG4nrV+jwbgEhlQt+7MkbcTY3HiUw
+            HoOViQ9sUWKiKFAQ="/>
+        <activity
+            android:name="org.apkplug.app.apkplugActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>
